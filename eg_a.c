@@ -2,6 +2,7 @@
 
 int main(void)
 {
+	printf("this is by MAKE\n");
 	printf("this is an example\n");
 	printf("Please enter the stair steps:\n");
 	int n;
