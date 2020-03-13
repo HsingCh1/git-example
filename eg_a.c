@@ -3,11 +3,13 @@
 int main(void)
 {
 	printf("this is an example\n");
-
-	for(int i = 0; i < 10; i++){
-		for(int j = 0; j < 22; j++){
-			if(j >= 9 - i && j < 10) printf("#");
-			else if (j >= 12 && j < i + 13) printf("#");
+	printf("Please enter the stair steps:\n");
+	int n;
+	scanf("%i", &n);
+	for(int i = 0; i < n; i++){
+		for(int j = 0; j < n*2 + 2; j++){
+			if(j >= n-1 - i && j < n) printf("#");
+			else if (j >= n + 2  && j < i + n + 3) printf("#");
 			else printf(" ");
 		}
 		printf("\n");
